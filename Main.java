@@ -7,9 +7,13 @@ public class Main {
         SwingUtilities.invokeLater(() -> {
         JFrame frame = new JFrame("Snake Game");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(480,480);
-        frame.setVisible(true);
-        });
+       GamePanel gamePanel = new GamePanel();
+       frame.add(panel);
+       frame.setResizable(risizable: false);
+       frame.pack();
+       frame.setLocationRelativeTo(c:null);
+       frame.setVisible(b: true);
+    });
 
     }
 }
